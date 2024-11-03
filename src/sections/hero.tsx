@@ -39,7 +39,7 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
       ref={ref}
     >
       <div
-        className="flex lg:h-svh lg:w-svh lg:p-20 p-14"
+        className="flex lg:h-svh lg:w-svh lg:p-24 p-14"
         style={{
           backgroundImage: `linear-gradient(90deg, ${zincHex} 25%, ${orange700Hex} 25%, ${orange700Hex} 60%, ${zincHex} 60%)`,
         }}

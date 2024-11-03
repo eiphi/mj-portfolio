@@ -4,6 +4,7 @@ import { AnimatedGroup } from '@/components/motion/animated-group';
 import { useInView } from 'react-intersection-observer';
 import { twMerge } from 'tailwind-merge';
 import clsx from 'clsx';
+import SectionHeading from '@/components/section-heading';
 
 const skillsData = [
   {
@@ -48,10 +49,10 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
       ref={ref}
     >
       <div
-        className="w-full flex flex-col gap-4 items-center lg:p-20 p-14"
+        className="w-full flex flex-col gap-4 items-center lg:p-24 p-14"
         ref={gridRef}
       >
-        <h1 className="text-5xl lg:text-7xl font-extrabold mb-10">My Expertise</h1>
+        <SectionHeading>My Expertise</SectionHeading>
         {wasGridInView ? (
           <AnimatedGroup
             className="grid grid-cols-1 lg:grid-cols-3 gap-5"

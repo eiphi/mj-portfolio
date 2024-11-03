@@ -36,7 +36,7 @@ const SidebarNav = ({ activeSection }: { activeSection: string }) => {
             e.preventDefault();
             window.history.pushState({}, '', option.href);
           }}
-          className={`flex items-center gap-2 group p-2 hover:text-orange-200 ${
+          className={`flex items-center gap-2 group p-2 hover:text-orange-200 transition-all duration-150 ${
             activeSection === option.id ? 'text-orange-500' : 'text-gray-500'
           }`}
         >
