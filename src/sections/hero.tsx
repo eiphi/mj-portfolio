@@ -77,6 +77,12 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
                 <a
                   href="/#contact"
                   className="text-violet-500 hover:text-violet-300 animate-color duration-300"
+                  onClick={(e) => {
+                    const targetDiv = document.getElementById('contact');
+                    targetDiv && targetDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    e.preventDefault();
+                    window.history.pushState({}, '', '#contact');
+                  }}
                 >
                   Contact me
                 </a>
@@ -96,8 +102,8 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
             <div className="flex flex-col justify-end items-end w-full h-full">
               <div className="flex flex-col items-end lg:w-[90%]">
                 <img
-                  className="shadow-xl rounded-xl hover:scale-105 transition-all duration-300 cursor-pointer"
-                  src="/src/assets/800x450.jpg"
+                  className="shadow-xl rounded-xl hover:scale-110 transition-all duration-300 cursor-pointer"
+                  src="https://justjoin.it/blog/wp-content/uploads/2020/05/portal-3.0.png"
                   alt="Maciek Jazdzewski"
                   width="100%"
                   height="auto"

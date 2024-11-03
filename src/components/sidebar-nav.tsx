@@ -26,7 +26,7 @@ export const menuOptions = [
 const SidebarNav = ({ activeSection }: { activeSection: string }) => {
   console.log('activeSection', activeSection);
   return (
-    <nav className="flex flex-col fixed  top-[50%] ">
+    <nav className="flex flex-col fixed left-2 top-[50%]">
       {menuOptions.map((option) => (
         <a
           href={option.href}
@@ -41,11 +41,11 @@ const SidebarNav = ({ activeSection }: { activeSection: string }) => {
           }`}
         >
           <Circle
-            size={10}
+            size={14}
             className="transition-all duration-100 group-hover:scale-125"
             fill="currentColor"
           />
-          <span className="transition-all duration-300 group-hover:opacity-100 opacity-0 text-xs">
+          <span className="transition-all duration-300 group-hover:opacity-100 opacity-0 text-sm">
             {option.id}
           </span>
         </a>

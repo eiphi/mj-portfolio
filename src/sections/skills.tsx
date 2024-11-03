@@ -77,7 +77,7 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
                   </div>
                 </div>
                 <div className="py-6 xl:py-8 px-2 xl:px-4">
-                  <p className="font-mono text-sm xl:text-base">{skill.description}</p>
+                  <p className=" text-sm xl:text-base">{skill.description}</p>
                 </div>
               </div>
             ))}
