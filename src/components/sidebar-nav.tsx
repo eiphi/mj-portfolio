@@ -1,4 +1,5 @@
-import { Circle, Dot } from 'lucide-react';
+import { scrollToSection } from '@/lib/utils';
+import { Circle } from 'lucide-react';
 
 export const menuOptions = [
   {
@@ -26,15 +27,13 @@ export const menuOptions = [
 const SidebarNav = ({ activeSection }: { activeSection: string }) => {
   console.log('activeSection', activeSection);
   return (
-    <nav className="flex flex-col fixed left-2 top-[50%]">
+    <nav className="flex flex-col fixed left-2 top-[50%] translate-y-[-50%]">
       {menuOptions.map((option) => (
         <a
           href={option.href}
           onClick={(e) => {
-            const targetDiv = document.getElementById(option.id);
-            targetDiv && targetDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
             e.preventDefault();
-            window.history.pushState({}, '', option.href);
+            scrollToSection(option.id);
           }}
           className={`flex items-center gap-2 group p-2 hover:text-orange-200 transition-all duration-150 ${
             activeSection === option.id ? 'text-orange-500' : 'text-gray-500'

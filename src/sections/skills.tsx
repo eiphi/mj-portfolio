@@ -1,31 +1,32 @@
-import { Laptop, LoaderPinwheel, Smartphone, TestTubeDiagonal } from 'lucide-react';
-import { forwardRef, useEffect, useRef, useState } from 'react';
-import { AnimatedGroup } from '@/components/motion/animated-group';
+import { Laptop, LoaderPinwheel, Smartphone } from 'lucide-react';
+import { forwardRef, useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { twMerge } from 'tailwind-merge';
 import clsx from 'clsx';
+
+import { AnimatedGroup } from '@/components/motion/animated-group';
 import SectionHeading from '@/components/section-heading';
+import TechIconsSlider from '@/components/tech-icons-slider';
 
 const skillsData = [
   {
     titleUnderlined: 'Software',
     title: 'development',
     description:
-      'I have been working as a developer for 9 years. I have experience in building scalable, maintainable and beautiful web applications.',
+      'I am a real enthusiast of IT, working in the industry since 2013. Creative, innovative, experienced in planning, developing and managing robust applications.',
     icon: <Laptop size={32} />,
   },
   {
     titleUnderlined: 'Frontend',
     title: 'technologies',
     description:
-      'Passionate about UI/UX. Over 6 years of development experience in HTML, CSS, JS, TS, React, Redux, NextJS',
+      'Passionate about UI/UX. Over 8 years of development experience in HTML, CSS, JS, TS, React, Redux, NextJS among others.',
     icon: <LoaderPinwheel size={32} />,
   },
   {
     titleUnderlined: 'Mobile, testing,',
     title: 'CI/CD',
     description:
-      'Passionate about UI/UX. Over 6 years of development experience in HTML, CSS, JS, TS, React, Redux, NextJS',
+      'With a background working as a software tester, I have experience in creating and managing CI/CD pipelines, ensuring efficient and reliable software delivery.',
     icon: <Smartphone size={32} />,
   },
 ];
@@ -49,7 +50,7 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
       ref={ref}
     >
       <div
-        className="w-full flex flex-col gap-4 items-center lg:p-24 p-14"
+        className="w-full flex flex-col gap-4 items-center lg:px-24 px-14 pt-12"
         ref={gridRef}
       >
         <SectionHeading>My Expertise</SectionHeading>
@@ -85,10 +86,14 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
         ) : (
           <div className="h-[300px] xl:h-[350px]" />
         )}
+
+        <h3 className="hidden md:block text-4xl font-bold pt-14">Tools and technologies used:</h3>
+        <TechIconsSlider />
         <img
           src="/src/assets/html-code.webp"
           alt="skills"
-          className="-mt-10 w-[60%] opacity-20 min-w-[300px]"
+          draggable={false}
+          className="-mt-10 md:-mt-[260px] w-[60%] opacity-20 md:opacity-10 min-w-[300px]"
         />
       </div>
     </section>

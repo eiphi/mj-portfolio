@@ -1,5 +1,4 @@
 import { forwardRef } from 'react';
-import { TypeAnimation } from 'react-type-animation';
 
 const ContactSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (

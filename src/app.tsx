@@ -13,7 +13,7 @@ const App = () => {
   const [activeSection, setActiveSection] = useState(menuOptions[0].id);
 
   return (
-    <div className="bg-zinc-900 ">
+    <div className="bg-zinc-900">
       <SidebarNav activeSection={activeSection} />
       <InViewWrapper onChange={setActiveSection}>
         <HeroSection />

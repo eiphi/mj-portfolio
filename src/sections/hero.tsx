@@ -1,4 +1,5 @@
 import { Button } from '@/components/ui/button';
+import { scrollToSection } from '@/lib/utils';
 import { ArrowDown, ArrowUp, FileText, Github } from 'lucide-react';
 import { forwardRef } from 'react';
 import { TypeAnimation } from 'react-type-animation';
@@ -78,10 +79,8 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
                   href="/#contact"
                   className="text-violet-500 hover:text-violet-300 animate-color duration-300"
                   onClick={(e) => {
-                    const targetDiv = document.getElementById('contact');
-                    targetDiv && targetDiv.scrollIntoView({ behavior: 'smooth', block: 'start' });
                     e.preventDefault();
-                    window.history.pushState({}, '', '#contact');
+                    scrollToSection('contact');
                   }}
                 >
                   Contact me
