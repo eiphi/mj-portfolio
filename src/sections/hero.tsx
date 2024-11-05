@@ -109,7 +109,9 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
                 />
                 <div className="flex items-center justify-end lg:w-4/5 lg:px-5 py-10 gap-5">
                   <div className="flex flex-col gap-2">
-                    <h4 className="text-xl font-medium">Tradr</h4>
+                    <h4 className="text-2xl font-medium underline decoration-4 underline-offset-0 decoration-violet-500">
+                      Tradr
+                    </h4>
                     <p className="text-sm">
                       Worked on a project lorem ipsum dolor sit amet. Worked on a project lorem
                       ipsum dolor sit amet. Worked on a project lorem ipsum dolor sit adsad sa

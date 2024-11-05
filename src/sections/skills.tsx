@@ -35,7 +35,7 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
   const [wasGridInView, setWasGridInView] = useState(false);
 
   const [gridRef, inView] = useInView({
-    threshold: 0.7,
+    threshold: 0.5,
   });
 
   useEffect(() => {
@@ -87,7 +87,7 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
           <div className="h-[300px] xl:h-[350px]" />
         )}
 
-        <h3 className="hidden md:block text-4xl font-bold pt-14">Tools and technologies used:</h3>
+        <h3 className="z-10 hidden md:block text-4xl font-bold pt-14">Tools of the trade:</h3>
         <TechIconsSlider />
         <img
           src="/src/assets/html-code.webp"
