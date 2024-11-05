@@ -1,6 +1,14 @@
 import { Button } from '@/components/ui/button';
-import { scrollToSection } from '@/lib/utils';
-import { ArrowDown, ArrowUp, FileText, Github } from 'lucide-react';
+import { cn, scrollToSection } from '@/lib/utils';
+import {
+  ArrowDown,
+  ArrowUp,
+  ChevronDown,
+  ChevronDownCircle,
+  FileText,
+  Github,
+  Mouse,
+} from 'lucide-react';
 import { forwardRef } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -25,7 +33,7 @@ const heroAnimationSequenceItems = [
   'Wordpress',
 ];
 
-const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
+const HeroSection = forwardRef<HTMLDivElement, { isActiveSection: boolean }>(({isActiveSection}, ref) => {
   const animationSequenceArray = heroAnimationSequenceItems.flatMap((item, index) => [
     item,
     index === 0 ? 2300 : 1300,
@@ -87,9 +95,9 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
                 </a>
               </p>
             </div>
-            {/* <div className="hidden lg:flex justify-end absolute bottom-0 right-0 rounded-full overflow-hidden border-4 border-violet-600 w-[200px] h-[200px]">
+            {/* <div className="hidden lg:flex justify-end absolute -bottom-24 right-20 overflow-hidden w-[250px]">
               <img
-                src="/src/assets/portrait.jpg"
+                src="/src/assets/maciek.png"
                 alt="Maciek Jazdzewski"
                 width="100%"
                 height="auto"
@@ -139,6 +147,13 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
           </div>
         </div>
       </div>
+      <ChevronDown
+        className={cn(
+          'hidden lg:block absolute size-10 text-white animate-bounce bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer transition-all duration-600',
+          isActiveSection ? 'opacity-100 transition duration-600' : 'opacity-0 transition duration-600'
+        )}
+        onClick={() => scrollToSection('skills')}
+      />
     </section>
   );
 });

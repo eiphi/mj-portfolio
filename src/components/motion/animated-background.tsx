@@ -1,4 +1,3 @@
-'use client';
 import { cn } from '@/lib/utils';
 import { AnimatePresence, Transition, motion } from 'framer-motion';
 import { Children, cloneElement, ReactElement, useEffect, useState, useId } from 'react';

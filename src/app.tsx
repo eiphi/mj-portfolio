@@ -32,7 +32,7 @@ const App = () => {
       <Loader isLoaderOpen={isLoaderOpen} />
       <SidebarNav activeSection={activeSection} />
       <InViewWrapper onChange={setActiveSection}>
-        <HeroSection />
+        <HeroSection isActiveSection={activeSection === 'home'} />
       </InViewWrapper>
       <InViewWrapper onChange={setActiveSection}>
         <SkillsSection />

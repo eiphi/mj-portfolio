@@ -171,3 +171,70 @@ export const personalProjectsArray = [
 ];
 
 export const allProjectsArray = [...workProjectsArray, ...personalProjectsArray];
+
+export const experienceDataArray = [
+  {
+    id: 'ortto',
+    company: 'Ortto',
+    position: 'Senior Fronted Developer',
+    dates: 'Oct 2019 - Jul 2023',
+    location: 'Sydney, Australia',
+    url: 'https://ortto.com',
+    description:
+      'Part of the core frontend team building Ortto app. Led development of key features including reporting dashboards, widgets, playbooks, and push notifications. \n\nWorked with React & Redux, Google Charts, and Pure JS among others. Mentored team members and contributed to feature planning.',
+  },
+  {
+    id: 'ortto1',
+    company: 'Ortto',
+    position: 'Senior Fronted Developer',
+    dates: 'Oct 2019 - Jul 2023',
+    location: 'Sydney, Australia',
+    url: 'https://ortto.com',
+    description:
+      'Part of the core frontend team responsible for building the new version of Ortto app - robust and scalable marketing automation software.\n' +
+      '• Working closely with design and PM teams on UX/UI improvements, planning, developing and implementing new features with React & Redux.\n' +
+      '• Taking ownership, developing and maintaining multiple complex segments of the app using different technologies and solutions:\n' +
+      '• Robust reporting and dashboard part of the system (Google charts)\n' +
+      '• Capture displaying widgets and collecting data from customer 3rd party websites (Pure JS)\n' +
+      '• Playbooks & Journeys (intuitive visual marketing automated solutions)\n' +
+      '• Push notifications (iOS, Android, MacOS, Windows push implementation)\n' +
+      '• Actively bug-fixing existing issues and brainstorming potential new features\n' +
+      '• Onboarding and mentoring new employees, sharing knowledge of the project and the application',
+  },
+  {
+    id: 'ortto2',
+    company: 'Ortto',
+    position: 'Senior Fronted Developer',
+    dates: 'Oct 2019 - Jul 2023',
+    location: 'Sydney, Australia',
+    url: 'https://ortto.com',
+    description:
+      'Part of the core frontend team responsible for building the new version of Ortto app - robust and scalable marketing automation software.\n' +
+      '• Working closely with design and PM teams on UX/UI improvements, planning, developing and implementing new features with React & Redux.\n' +
+      '• Taking ownership, developing and maintaining multiple complex segments of the app using different technologies and solutions:\n' +
+      '• Robust reporting and dashboard part of the system (Google charts)\n' +
+      '• Capture displaying widgets and collecting data from customer 3rd party websites (Pure JS)\n' +
+      '• Playbooks & Journeys (intuitive visual marketing automated solutions)\n' +
+      '• Push notifications (iOS, Android, MacOS, Windows push implementation)\n' +
+      '• Actively bug-fixing existing issues and brainstorming potential new features\n' +
+      '• Onboarding and mentoring new employees, sharing knowledge of the project and the application',
+  },
+  {
+    id: 'ortto3',
+    company: 'Ortto',
+    position: 'Senior Fronted Developer',
+    dates: 'Oct 2019 - Jul 2023',
+    location: 'Sydney, Australia',
+    url: 'https://ortto.com',
+    description:
+      'Part of the core frontend team responsible for building the new version of Ortto app - robust and scalable marketing automation software.\n' +
+      '• Working closely with design and PM teams on UX/UI improvements, planning, developing and implementing new features with React & Redux.\n' +
+      '• Taking ownership, developing and maintaining multiple complex segments of the app using different technologies and solutions:\n' +
+      '• Robust reporting and dashboard part of the system (Google charts)\n' +
+      '• Capture displaying widgets and collecting data from customer 3rd party websites (Pure JS)\n' +
+      '• Playbooks & Journeys (intuitive visual marketing automated solutions)\n' +
+      '• Push notifications (iOS, Android, MacOS, Windows push implementation)\n' +
+      '• Actively bug-fixing existing issues and brainstorming potential new features\n' +
+      '• Onboarding and mentoring new employees, sharing knowledge of the project and the application',
+  },
+];

@@ -14,7 +14,7 @@ type Project = {
 const ProjectCard = ({ project }: { project: Project }) => {
   const { id, title, desc, website, technologies, imagesUrl } = project;
   return (
-    <Card className="group max-w-[400px] cursor-pointer hover:scale-125 z-30 hover:z-50 transition duration-300 hover:shadow-xl hover:shadow-zinc-800">
+    <Card className="group max-w-[400px] cursor-pointer hover:scale-125 z-2 hover:z-10 transition duration-300 hover:shadow-xl hover:shadow-zinc-800">
       <a
         href={website}
         rel="noopener noreferrer"
