@@ -5,6 +5,7 @@ import { ArrowDown, ArrowUp, ChevronDown, FileText, Github } from 'lucide-react'
 import { Button } from '@/components/ui/button';
 import { heroAnimationSequenceItems, workProjectsArray } from '@/lib/constants';
 import { cn, scrollToSection } from '@/lib/utils';
+import resumePDF from '@/assets/MACIEJ_JAZDZEWSKI_Resume.pdf';
 
 const HeroSection = forwardRef<HTMLDivElement, { isActiveSection: boolean }>(
   ({ isActiveSection }, ref) => {
@@ -129,7 +130,7 @@ const HeroSection = forwardRef<HTMLDivElement, { isActiveSection: boolean }>(
                     </Button>
                   </a>
                   <a
-                    href="/src/assets/MACIEJ_JAZDZEWSKI_RESUME.pdf"
+                    href={resumePDF}
                     target="_blank"
                   >
                     <Button variant="default">
