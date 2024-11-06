@@ -4,7 +4,7 @@ import SectionHeading from '@/components/section-heading';
 import ExperienceAccordion from '@/components/experience-accordion';
 import resumePDF from '@/assets/MACIEJ_JAZDZEWSKI_Resume.pdf';
 
-const ExperienceSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
+const ExperienceSection = forwardRef<HTMLDivElement, {}>((_, ref) => {
   return (
     <section
       id="experience"

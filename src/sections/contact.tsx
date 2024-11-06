@@ -3,7 +3,7 @@ import { scrollToSection } from '@/lib/utils';
 import { ArrowUp, Github, Linkedin, Mail } from 'lucide-react';
 import { forwardRef } from 'react';
 
-const ContactSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
+const ContactSection = forwardRef<HTMLDivElement, {}>((_, ref) => {
   return (
     <section
       id="contact"

@@ -31,7 +31,7 @@ const skillsData = [
   },
 ];
 
-const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
+const HeroSection = forwardRef<HTMLDivElement, {}>((_, ref) => {
   const [wasGridInView, setWasGridInView] = useState(false);
 
   const [gridRef, inView] = useInView({

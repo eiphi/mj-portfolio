@@ -1,11 +1,11 @@
 import ProjectCard from '@/components/project-card';
 import SectionHeading from '@/components/section-heading';
 import { allProjectsArray, workProjectsArray, personalProjectsArray } from '@/lib/constants';
-import { forwardRef, useState, useEffect } from 'react';
+import { forwardRef, useState } from 'react';
 
 const projectCategoriesArray = ['All', 'Commercial', 'Personal'];
 
-const WorkSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
+const WorkSection = forwardRef<HTMLDivElement, {}>((_, ref) => {
   const [projectCategories, setProjectCategories] = useState(projectCategoriesArray[0]);
 
   const selectedProjects =
