@@ -29,7 +29,7 @@ const WorkSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
               <button
                 key={index}
                 aria-selected={projectCategories === label}
-                className="rounded-md inline-flex p-2 w-32 md:w-40 items-center justify-center text-center transition-transform active:scale-[0.98] text-md md:text-lg font-medium aria-selected:bg-violet-500"
+                className="rounded-md inline-flex p-2 w-24 md:w-40 items-center justify-center text-center transition-transform active:scale-[0.98] text-sm md:text-lg font-medium aria-selected:bg-violet-500"
                 onClick={() => setProjectCategories(label)}
               >
                 {label}
@@ -43,7 +43,6 @@ const WorkSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
               <ProjectCard
                 key={`${project.id}-${index}`}
                 project={project}
-                // TODO DATA AND FIX ERROR
               />
             );
           })}

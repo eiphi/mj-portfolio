@@ -12,13 +12,10 @@ const ContactSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
       <div className="w-full flex flex-col gap-4 items-center lg:px-20 px-14 pt-12">
         <SectionHeading>Contact</SectionHeading>
         <div className="flex w-full gap-4">
-          <div className="flex w-1/2 flex-col gap-8 items-start justify-center">
+          <div className="flex w-full lg:w-1/2 flex-col gap-8 items-center justify-center">
             <div className="flex flex-col gap-2">
               <h3 className="text-2xl font-medium">Let's get in touch!</h3>
-              <p className="text-zinc-400">Feel free to reach out through any of these channels:</p>
-            </div>
-
-            <div className="flex flex-col gap-4">
+              <p className="text-zinc-400 pb-4">Feel free to reach out through any of these channels:</p>
               <div className="flex items-center gap-3">
                 <div className="bg-violet-500 p-2 rounded-lg">
                   <Mail />
@@ -46,7 +43,7 @@ const ContactSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
                     rel="noopener noreferrer"
                     className="text-zinc-400 hover:text-violet-500 transition-colors"
                   >
-                    linkedin.com/in/maciekjazdzewski
+                    linkedin.com/in/maciej-jazdzewski/
                   </a>
                 </div>
               </div>
@@ -73,7 +70,7 @@ const ContactSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
             <img
               src="/src/assets/maciek.png"
               alt="Maciek Jazdzewski"
-              className="h-full w-auto scale-x-[-1]"
+              className="h-full w-auto scale-x-[-1] -mb-28"
             />
           </div>
         </div>

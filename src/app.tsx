@@ -38,9 +38,9 @@ const App = () => {
       <InViewWrapper onChange={setActiveSection}>
         <SkillsSection />
       </InViewWrapper>
-      {/* <InViewWrapper onChange={setActiveSection}>
+      <InViewWrapper onChange={setActiveSection}>
         <WorkSection />
-      </InViewWrapper> */}
+      </InViewWrapper>
       <InViewWrapper onChange={setActiveSection}>
         <ExperienceSection />
       </InViewWrapper>

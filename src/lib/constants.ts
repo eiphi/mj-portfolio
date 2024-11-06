@@ -25,13 +25,26 @@ import NpmSVG from '@/assets/tech-icons/npm.svg';
 import PostmanSVG from '@/assets/tech-icons/postman.svg';
 import SeleniumSVG from '@/assets/tech-icons/selenium.svg';
 
-import TixImage1 from '@/assets/projects/tix1.webp';
-import TixImage2 from '@/assets/projects/tix2.webp';
-import JJImage1 from '@/assets/projects/jjit1.png';
+import TixImage from '@/assets/projects/tix.png';
+import JJImage from '@/assets/projects/jjit.png';
+import DealsImage from '@/assets/projects/deals.png';
+import BBGMImage from '@/assets/projects/6man.png';
+import FreelanceImage from '@/assets/projects/freelance.png';
+import OrttoImage from '@/assets/projects/ortto.avif';
+import PortfolioImage from '@/assets/projects/portfolio.png';
 
 export type Technology = {
   title: string;
   svg: string;
+};
+
+export type Project = {
+  id: string;
+  title: string;
+  desc: string;
+  website: string;
+  technologies: Technology[];
+  imageUrl: string;
 };
 
 export const technologiesMap: Record<string, Technology> = {
@@ -92,7 +105,62 @@ export const technologySvgsArray = [
   { title: 'Selenium', svg: SeleniumSVG },
 ];
 
+export const heroAnimationSequenceItems = [
+  'React',
+  'JavaScript',
+  'Redux',
+  'TypeScript',
+  'Next.js',
+  'TailwindCSS',
+  'Node.js',
+  'Vitest',
+  'Storybook',
+  'Git',
+  'Playwright',
+  'HTML5',
+  'Figma',
+  'Vite',
+  'AngularJS',
+  'Webpack',
+  'CSS3',
+  'Wordpress',
+];
+
 export const workProjectsArray = [
+  {
+    id: 'ortto',
+    title: 'Ortto',
+    website: 'https://ortto.com',
+    desc: 'Part of the core frontend team building Ortto app. Led development of key features including reporting dashboards, widgets, playbooks, and push notifications among others.',
+    technologies: [
+      technologiesMap.React,
+      technologiesMap.Redux,
+      technologiesMap.Storybook,
+      technologiesMap.Cloudflare,
+      technologiesMap.Css,
+      technologiesMap.JavaScript,
+      technologiesMap.Git,
+      technologiesMap.Jenkins,
+    ],
+    imageUrl: OrttoImage,
+  },
+
+  {
+    id: 'jjit',
+    title: 'Just Join IT',
+    website: 'https://justjoin.it',
+    desc: "As part of the founding development team of Poland's largest tech job board, I played a key role in building functionalities that drive company growth and led to multiple startup award nominations.",
+    technologies: [
+      technologiesMap.React,
+      technologiesMap.AWS,
+      technologiesMap.Bootstrap,
+      technologiesMap.Html,
+      technologiesMap.Css,
+      technologiesMap.JavaScript,
+      technologiesMap.Git,
+    ],
+    imageUrl: JJImage,
+  },
   {
     id: 'tix',
     title: 'Tix.nl',
@@ -106,67 +174,71 @@ export const workProjectsArray = [
       technologiesMap.Css,
       technologiesMap.JavaScript,
       technologiesMap.Git,
+      technologiesMap.MaterialUi,
     ],
-    imagesUrl: [TixImage1, TixImage2],
+    imageUrl: TixImage,
   },
   {
-    id: 'project1',
-    title: 'Project Alpha',
-    website: 'https://www.justjoin.it',
-    desc: 'Led development of an enterprise resource planning system with focus on inventory management and supply chain optimization. Implemented real-time tracking and reporting features.',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Redis', 'Docker', 'AWS', 'TypeScript'],
-    imagesUrl: [JJImage1, JJImage1],
-  },
-  {
-    id: 'project2',
-    title: 'Analytics Dashboard',
-    website: 'https://www.justjoin.it',
-    desc: 'Built a data visualization platform for analyzing customer behavior patterns. Created interactive charts and graphs to display key metrics and trends.',
-    technologies: ['Vue.js', 'D3.js', 'Python', 'PostgreSQL', 'Elasticsearch', 'Kibana'],
-    imagesUrl: [TixImage1, TixImage2],
-  },
-  {
-    id: 'project3',
-    title: 'E-commerce Platform',
-    website: 'https://www.tix.nl',
-    desc: 'Developed a scalable online marketplace connecting buyers and sellers. Implemented secure payment processing and real-time inventory management.',
-    technologies: ['Next.js', 'Stripe', 'Firebase', 'Material UI', 'Redux', 'Jest'],
-    imagesUrl: [TixImage1, TixImage2],
+    id: 'freelance',
+    title: 'Freelance',
+    website: 'https://eiphi.site',
+    desc: 'Worked independently as a freelance web developer, managing the entire project lifecycle from client acquisition through development and maintenance.',
+    technologies: [
+      technologiesMap.React,
+      technologiesMap.Html,
+      technologiesMap.Css,
+      technologiesMap.JavaScript,
+      technologiesMap.Jquery,
+      technologiesMap.MaterialUi,
+      technologiesMap.Playwright,
+      technologiesMap.Bootstrap,
+    ],
+    imageUrl: FreelanceImage,
   },
 ];
 
 export const personalProjectsArray = [
   {
-    id: 'personal1',
-    title: 'Portfolio Website',
-    website: 'https://www.tix.nl',
-    desc: 'A modern portfolio website built with React and Three.js featuring 3D animations and interactive elements. Implemented responsive design and dark mode.',
-    technologies: ['React', 'Three.js', 'TailwindCSS', 'Framer Motion', 'TypeScript', 'Vite'],
-    imagesUrl: [TixImage1, TixImage2],
+    id: 'games',
+    title: 'Game deals',
+    website: 'https://deals.eiphi.site',
+    desc: 'A personal project built with React, Redux Toolkit, ShadcnUI and Tailwind CSS. Search and compare the best gaming deals across various digital stores. Integrates with CheapShark and AnyGameDeals APIs.',
+    technologies: [
+      technologiesMap.React,
+      technologiesMap.Redux,
+      technologiesMap.Typescript,
+      technologiesMap.Vite,
+      technologiesMap.Tailwind,
+      technologiesMap.Postman,
+    ],
+    imageUrl: DealsImage,
   },
   {
-    id: 'personal2',
-    title: 'Weather App',
-    website: 'https://www.tix.nl',
-    desc: 'Real-time weather application with location-based forecasts. Features include hourly predictions, animated weather icons, and saved location tracking.',
-    technologies: ['React Native', 'OpenWeather API', 'Redux', 'Styled Components', 'Jest'],
-    imagesUrl: [TixImage1, TixImage2],
+    id: 'bbgm',
+    title: 'BBGM 6-man',
+    website: 'https://bbgm6man.eiphi.site',
+    desc: 'A companion app for Basketball GM online game built with React and Redux. Features include importing Basketball GM savegames, comparing players, and storing data in local storage. Uses react-router, react-thunk, styled components, and Semantic UI.',
+    technologies: [
+      technologiesMap.React,
+      technologiesMap.Redux,
+      technologiesMap.Typescript,
+      technologiesMap.Git,
+      technologiesMap.Css,
+    ],
+    imageUrl: BBGMImage,
   },
   {
-    id: 'personal3',
-    title: 'Task Manager',
-    website: 'https://www.tix.nl',
-    desc: 'Full-stack task management application with drag-and-drop interface, collaborative features, and real-time updates using WebSocket.',
-    technologies: ['Next.js', 'PostgreSQL', 'Prisma', 'Socket.io', 'TailwindCSS', 'TypeScript'],
-    imagesUrl: [TixImage1, TixImage2],
-  },
-  {
-    id: 'personal4',
-    title: 'Recipe Finder',
-    website: 'https://www.tix.nl',
-    desc: 'Web application for discovering and sharing recipes. Features include ingredient-based search, user ratings, and personalized recipe recommendations.',
-    technologies: ['Vue.js', 'Firebase', 'Vuex', 'TailwindCSS', 'Jest', 'Cypress'],
-    imagesUrl: [TixImage1, TixImage2],
+    id: 'portfolio',
+    title: 'MJ Portfolio',
+    website: 'https://www.eiphi.site',
+    desc: 'This website built with React, Vite, Tailwind CSS and Framer Motion. Features animations and interactive elements and is fully responsive.',
+    technologies: [
+      technologiesMap.React,
+      technologiesMap.Css,
+      technologiesMap.Typescript,
+      technologiesMap.Tailwind,
+    ],
+    imageUrl: PortfolioImage,
   },
 ];
 
