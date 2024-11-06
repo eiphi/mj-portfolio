@@ -3,6 +3,7 @@ import { forwardRef } from 'react';
 import SectionHeading from '@/components/section-heading';
 import ExperienceAccordion from '@/components/experience-accordion';
 import resumePDF from '@/assets/MACIEJ_JAZDZEWSKI_Resume.pdf';
+import ResumeImg from '@/assets/cv.webp';
 
 const ExperienceSection = forwardRef<HTMLDivElement, {}>((_, ref) => {
   return (
@@ -22,7 +23,7 @@ const ExperienceSection = forwardRef<HTMLDivElement, {}>((_, ref) => {
               target="_blank"
             >
               <img
-                src="/src/assets/cv.webp"
+                src={ResumeImg}
                 alt="Resume"
               />
             </a>

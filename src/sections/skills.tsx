@@ -7,6 +7,8 @@ import { AnimatedGroup } from '@/components/motion/animated-group';
 import SectionHeading from '@/components/section-heading';
 import TechIconsSlider from '@/components/tech-icons-slider';
 
+import HTMLCodeImg from '@/assets/html-code.webp';
+
 const skillsData = [
   {
     titleUnderlined: 'Software',
@@ -93,7 +95,7 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((_, ref) => {
         <h3 className="z-10 hidden lg:block text-4xl font-bold pt-14">Tools of the trade:</h3>
         <TechIconsSlider />
         <img
-          src="/src/assets/html-code.webp"
+          src={HTMLCodeImg}
           alt="skills"
           draggable={false}
           className="hidden lg:block -mt-[320px] w-[60%] opacity-20 md:opacity-10 min-w-[300px]"

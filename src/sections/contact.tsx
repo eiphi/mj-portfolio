@@ -2,6 +2,7 @@ import SectionHeading from '@/components/section-heading';
 import { scrollToSection } from '@/lib/utils';
 import { ArrowUp, Github, Linkedin, Mail } from 'lucide-react';
 import { forwardRef } from 'react';
+import MaciekImg from '@/assets/maciek.webp';
 
 const ContactSection = forwardRef<HTMLDivElement, {}>((_, ref) => {
   return (
@@ -68,7 +69,7 @@ const ContactSection = forwardRef<HTMLDivElement, {}>((_, ref) => {
           </div>
           <div className="hidden lg:flex max-h-[400px] w-1/2 items-center justify-center">
             <img
-              src="/src/assets/maciek.webp"
+              src={MaciekImg}
               alt="Maciek Jazdzewski"
               className="h-full w-auto scale-x-[-1] -mb-28"
             />
