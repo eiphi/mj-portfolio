@@ -18,7 +18,7 @@ const ProjectCard = ({ project }: { project: Project }) => {
       onClick={() => {
         window.open(website, '_blank');
       }}
-      className="group max-w-[400px] cursor-pointer hover:scale-125 z-2 hover:z-10 transition duration-300 hover:shadow-xl hover:shadow-zinc-800"
+      className="group max-w-[400px] cursor-pointer hover:scale-125 md:hover:scale-115 z-2 hover:z-10 transition duration-300 hover:shadow-xl hover:shadow-zinc-800"
     >
       <img
         src={imagesUrl[0]}

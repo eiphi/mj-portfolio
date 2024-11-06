@@ -87,7 +87,7 @@ const ContactSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
             scrollToSection('home');
           }}
         >
-          <ArrowUp className="size-8 transform -translate-y-3" />
+          <ArrowUp className="size-8" />
         </a>
       </div>
     </section>

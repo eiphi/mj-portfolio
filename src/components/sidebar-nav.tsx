@@ -25,7 +25,6 @@ export const menuOptions = [
 ];
 
 const SidebarNav = ({ activeSection }: { activeSection: string }) => {
-  console.log('activeSection', activeSection);
   return (
     <nav className="flex flex-col fixed left-2 top-[50%] translate-y-[-50%]">
       {menuOptions.map((option) => (

@@ -60,7 +60,10 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
             preset="fade"
           >
             {skillsData.map((skill, index) => (
-              <div className="border-4 border-zinc-500 p-6 xl:p-10 h-[300px] w-[300px] xl:h-[350px] xl:w-[350px]">
+              <div
+                key={`skill-${index}`}
+                className="border-4 border-zinc-500 p-6 xl:p-10 h-[300px] w-[300px] xl:h-[350px] xl:w-[350px]"
+              >
                 <div className="flex items-center gap-2">
                   {skill.icon}
                   <div>

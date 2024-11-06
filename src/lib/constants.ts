@@ -176,65 +176,37 @@ export const experienceDataArray = [
   {
     id: 'ortto',
     company: 'Ortto',
-    position: 'Senior Fronted Developer',
+    position: 'Senior Frontend Developer',
     dates: 'Oct 2019 - Jul 2023',
-    location: 'Sydney, Australia',
     url: 'https://ortto.com',
     description:
       'Part of the core frontend team building Ortto app. Led development of key features including reporting dashboards, widgets, playbooks, and push notifications. \n\nWorked with React & Redux, Google Charts, and Pure JS among others. Mentored team members and contributed to feature planning.',
   },
   {
-    id: 'ortto1',
-    company: 'Ortto',
-    position: 'Senior Fronted Developer',
-    dates: 'Oct 2019 - Jul 2023',
-    location: 'Sydney, Australia',
-    url: 'https://ortto.com',
+    id: 'justjoinit',
+    company: 'Just Join IT',
+    position: 'Frontend Developer',
+    dates: 'Jan 2018 - Oct 2019',
+    url: 'https://justjoin.it',
     description:
-      'Part of the core frontend team responsible for building the new version of Ortto app - robust and scalable marketing automation software.\n' +
-      '• Working closely with design and PM teams on UX/UI improvements, planning, developing and implementing new features with React & Redux.\n' +
-      '• Taking ownership, developing and maintaining multiple complex segments of the app using different technologies and solutions:\n' +
-      '• Robust reporting and dashboard part of the system (Google charts)\n' +
-      '• Capture displaying widgets and collecting data from customer 3rd party websites (Pure JS)\n' +
-      '• Playbooks & Journeys (intuitive visual marketing automated solutions)\n' +
-      '• Push notifications (iOS, Android, MacOS, Windows push implementation)\n' +
-      '• Actively bug-fixing existing issues and brainstorming potential new features\n' +
-      '• Onboarding and mentoring new employees, sharing knowledge of the project and the application',
+      "As part of the founding development team of Poland's largest tech job board, I played a key role in building functionalities that drive company growth and led to multiple startup award nominations.\n\nResponsible for the transition from AngularJS to React while developing new features, designing layouts, and creating marketing landing pages. Took on leadership responsibilities including onboarding new developers and providing technical support to team members.",
   },
   {
-    id: 'ortto2',
-    company: 'Ortto',
-    position: 'Senior Fronted Developer',
-    dates: 'Oct 2019 - Jul 2023',
-    location: 'Sydney, Australia',
-    url: 'https://ortto.com',
+    id: 'freelance',
+    company: 'Freelance',
+    position: 'Freelance Web Developer',
+    dates: 'Jan 2015 - Jan 2018',
+    url: 'https://eiphi.site',
     description:
-      'Part of the core frontend team responsible for building the new version of Ortto app - robust and scalable marketing automation software.\n' +
-      '• Working closely with design and PM teams on UX/UI improvements, planning, developing and implementing new features with React & Redux.\n' +
-      '• Taking ownership, developing and maintaining multiple complex segments of the app using different technologies and solutions:\n' +
-      '• Robust reporting and dashboard part of the system (Google charts)\n' +
-      '• Capture displaying widgets and collecting data from customer 3rd party websites (Pure JS)\n' +
-      '• Playbooks & Journeys (intuitive visual marketing automated solutions)\n' +
-      '• Push notifications (iOS, Android, MacOS, Windows push implementation)\n' +
-      '• Actively bug-fixing existing issues and brainstorming potential new features\n' +
-      '• Onboarding and mentoring new employees, sharing knowledge of the project and the application',
+      'Worked independently as a freelance web developer, managing the entire project lifecycle from client acquisition through development and maintenance.\n\nCollaborated with individual and corporate clients to build and maintain responsive websites, transforming designs into user-friendly applications using technologies like HTML, CSS, JavaScript, jQuery, WordPress, PrestaShop, and Joomla.',
   },
   {
-    id: 'ortto3',
-    company: 'Ortto',
-    position: 'Senior Fronted Developer',
-    dates: 'Oct 2019 - Jul 2023',
-    location: 'Sydney, Australia',
-    url: 'https://ortto.com',
+    id: 'tix',
+    company: 'Tix.nl',
+    position: 'Software Tester',
+    dates: 'Jul 2013 - Dec 2014',
+    url: 'https://tix.nl',
     description:
-      'Part of the core frontend team responsible for building the new version of Ortto app - robust and scalable marketing automation software.\n' +
-      '• Working closely with design and PM teams on UX/UI improvements, planning, developing and implementing new features with React & Redux.\n' +
-      '• Taking ownership, developing and maintaining multiple complex segments of the app using different technologies and solutions:\n' +
-      '• Robust reporting and dashboard part of the system (Google charts)\n' +
-      '• Capture displaying widgets and collecting data from customer 3rd party websites (Pure JS)\n' +
-      '• Playbooks & Journeys (intuitive visual marketing automated solutions)\n' +
-      '• Push notifications (iOS, Android, MacOS, Windows push implementation)\n' +
-      '• Actively bug-fixing existing issues and brainstorming potential new features\n' +
-      '• Onboarding and mentoring new employees, sharing knowledge of the project and the application',
+      'First Software Tester at the largest flight search engine company in the Netherlands, responsible for creating and executing test strategies including test automation.\n\nWorked closely with development team to maintain software quality while building automated tests using Ruby, Selenium and other tools.',
   },
 ];

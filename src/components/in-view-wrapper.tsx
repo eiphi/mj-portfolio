@@ -10,7 +10,7 @@ interface InViewWrapperProps {
 export const InViewWrapper: React.FC<InViewWrapperProps> = ({
   onChange,
   children,
-  threshold = 0.6,
+  threshold = 0.5,
 }) => {
   const handleChange = (status: boolean, entry: any) => {
     const targetID = entry?.target?.id;

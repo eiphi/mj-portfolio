@@ -3,8 +3,9 @@ import { forwardRef } from 'react';
 import { ImageDialog } from '@/components/motion/image-dialog';
 import SectionHeading from '@/components/section-heading';
 import ExperienceAccordion from '@/components/experience-accordion';
-import cvThumbImage from '@/assets/cv-ph.png';
-import fullCvImage from '@/assets/portrait.jpg';
+import cvThumbImage from '@/assets/cv1.png';
+import fullCvImage from '@/assets/cv-full.webp';
+import verticalCvImage from '@/assets/cv-vert.webp';
 
 const ExperienceSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (
@@ -17,14 +18,18 @@ const ExperienceSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 w-full">
           <div className="flex w-full h-auto lg:w-3/4 items-center justify-center">
             <ExperienceAccordion />
-            {/* TODO REAL DATA */}
           </div>
-          <div className="flex w-full h-auto lg:w-1/4 items-center justify-center">
+          <div className="hidden lg:flex w-full h-auto lg:w-1/4 items-center justify-center">
             <ImageDialog
               thumbUrl={cvThumbImage}
               fullImgUrl={fullCvImage}
-              // TODO FULL IMAGE
-              // TODO CV COLORS
+              alt="CV"
+            />
+          </div>
+          <div className="flex lg:hidden w-full h-auto lg:w-1/4 items-center justify-center">
+            <ImageDialog
+              thumbUrl={cvThumbImage}
+              fullImgUrl={verticalCvImage}
               alt="CV"
             />
           </div>

@@ -11,6 +11,7 @@ import SkillsSection from './sections/skills';
 import WorkSection from './sections/work';
 import ExperienceSection from './sections/experience';
 import ContactSection from './sections/contact';
+import { InView } from 'react-intersection-observer';
 
 const App = () => {
   const [isLoaderOpen, setIsLoaderOpen] = useState(true);
@@ -37,9 +38,9 @@ const App = () => {
       <InViewWrapper onChange={setActiveSection}>
         <SkillsSection />
       </InViewWrapper>
-      <InViewWrapper onChange={setActiveSection}>
+      {/* <InViewWrapper onChange={setActiveSection}>
         <WorkSection />
-      </InViewWrapper>
+      </InViewWrapper> */}
       <InViewWrapper onChange={setActiveSection}>
         <ExperienceSection />
       </InViewWrapper>
