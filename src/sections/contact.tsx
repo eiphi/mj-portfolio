@@ -68,7 +68,7 @@ const ContactSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
           </div>
           <div className="hidden lg:flex max-h-[400px] w-1/2 items-center justify-center">
             <img
-              src="/src/assets/maciek.png"
+              src="/src/assets/maciek.webp"
               alt="Maciek Jazdzewski"
               className="h-full w-auto scale-x-[-1] -mb-28"
             />

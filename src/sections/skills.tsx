@@ -26,7 +26,7 @@ const skillsData = [
     titleUnderlined: 'Mobile, testing,',
     title: 'CI/CD',
     description:
-      'With a background working as a software tester, I have experience in creating and managing CI/CD pipelines, ensuring efficient and reliable software delivery.',
+      'Having worked as a software tester, I have experience creating and managing CI/CD pipelines to ensure efficient and reliable software delivery.',
     icon: <Smartphone size={32} />,
   },
 ];
@@ -90,13 +90,13 @@ const HeroSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
           <div className="h-[300px] xl:h-[350px]" />
         )}
 
-        <h3 className="z-10 hidden md:block text-4xl font-bold pt-14">Tools of the trade:</h3>
+        <h3 className="z-10 hidden lg:block text-4xl font-bold pt-14">Tools of the trade:</h3>
         <TechIconsSlider />
         <img
           src="/src/assets/html-code.webp"
           alt="skills"
           draggable={false}
-          className="-mt-10 md:-mt-[260px] w-[60%] opacity-20 md:opacity-10 min-w-[300px]"
+          className="hidden lg:block -mt-[320px] w-[60%] opacity-20 md:opacity-10 min-w-[300px]"
         />
       </div>
     </section>

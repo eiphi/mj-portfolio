@@ -10,7 +10,7 @@ const ExperienceSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
       id="experience"
       ref={ref}
     >
-      <div className="w-full flex flex-col gap-4 items-center lg:px-20 px-14 pt-12">
+      <div className="w-full flex flex-col gap-4 items-center lg:px-20 px-14 pt-12 pb-8 lg:pb-16">
         <SectionHeading>Experience</SectionHeading>
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-0 w-full">
           <div className="flex w-full h-auto lg:w-3/4 items-center justify-center">
@@ -22,7 +22,7 @@ const ExperienceSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
               target="_blank"
             >
               <img
-                src="/src/assets/cv1.png"
+                src="/src/assets/cv.webp"
                 alt="Resume"
               />
             </a>

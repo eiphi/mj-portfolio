@@ -25,13 +25,13 @@ import NpmSVG from '@/assets/tech-icons/npm.svg';
 import PostmanSVG from '@/assets/tech-icons/postman.svg';
 import SeleniumSVG from '@/assets/tech-icons/selenium.svg';
 
-import TixImage from '@/assets/projects/tix.png';
-import JJImage from '@/assets/projects/jjit.png';
-import DealsImage from '@/assets/projects/deals.png';
-import BBGMImage from '@/assets/projects/6man.png';
-import FreelanceImage from '@/assets/projects/freelance.png';
-import OrttoImage from '@/assets/projects/ortto.avif';
-import PortfolioImage from '@/assets/projects/portfolio.png';
+import TixImage from '@/assets/projects/tix.webp';
+import JJImage from '@/assets/projects/jjit.webp';
+import DealsImage from '@/assets/projects/deals.webp';
+import BBGMImage from '@/assets/projects/6man.webp';
+import FreelanceImage from '@/assets/projects/freelance.webp';
+import OrttoImage from '@/assets/projects/ortto.webp';
+import PortfolioImage from '@/assets/projects/portfolio.webp';
 
 export type Technology = {
   title: string;

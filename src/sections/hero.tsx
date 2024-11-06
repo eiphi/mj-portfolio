@@ -64,7 +64,7 @@ const HeroSection = forwardRef<HTMLDivElement, { isActiveSection: boolean }>(
               <div className="mt-auto self-center lg:self-start w-full lg:w-[250px] w-full">
                 <h4 className="uppercase text-xl font-medium ">About me</h4>
                 <p className="text-sm my-2">
-                  Hi! I am Maciek. I am a frontend developer with over 10 years of experience. I
+                  Hi! I am Maciek. I am a frontend developer with over 10 years of experience in the IT industry. I
                   have a passion for creating user-friendly and efficient web applications. I am a
                   team player and I am always looking for new challenges.
                 </p>
@@ -88,15 +88,20 @@ const HeroSection = forwardRef<HTMLDivElement, { isActiveSection: boolean }>(
             <div className="lg:w-full lg:w-1/2 lg:h-full">
               <div className="flex flex-col justify-end items-end w-full h-full">
                 <div className="flex flex-col items-end lg:w-[90%]">
-                  <img
-                    className="self-center w-3/4 md:w-1/2 lg:w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 cursor-pointer"
-                    src={selectedProject?.imageUrl}
-                    alt={selectedProject?.title}
-                    height="auto"
-                  />
+                  <a
+                    href={selectedProject?.website}
+                    target="_blank"
+                  >
+                    <img
+                      className="self-center w-3/4 md:w-1/2 lg:w-full shadow-xl rounded-xl hover:scale-110 transition-all duration-300 cursor-pointer"
+                      src={selectedProject?.imageUrl}
+                      alt={selectedProject?.title}
+                      height="auto"
+                    />
+                  </a>
                   <div className="flex items-center justify-end self-center lg:self-end w-4/5 lg:px-5 py-10 gap-5">
                     <div className="flex flex-col gap-2">
-                      <h4 className="text-2xl font-medium underline decoration-4 underline-offset-0 decoration-violet-500">
+                      <h4 className="text-2xl font-medium underline decoration-4 decoration-violet-500">
                         {selectedProject?.title}
                       </h4>
                       <p className="text-sm">{selectedProject?.desc}</p>
