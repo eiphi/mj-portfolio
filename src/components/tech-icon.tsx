@@ -1,23 +1,17 @@
 import { Technology } from '@/lib/constants';
-import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
 
 const TechIcon = ({ tech }: { tech: Technology }) => {
   return (
-    <HoverCard
-      openDelay={300}
-      closeDelay={100}
-    >
-      <HoverCardTrigger>
-        <img
-          src={tech.svg}
-          alt={tech.title}
-          className="w-6 h-6 hover:scale-150 transition-transform duration-300"
-        />
-      </HoverCardTrigger>
-      <HoverCardContent side="top" sideOffset={8}>
+    <div className="group/tech-icon relative">
+      <img
+        src={tech.svg}
+        alt={tech.title}
+        className="w-6 h-6 hover:scale-150 transition-transform duration-300"
+      />
+      <p className="absolute -top-8 transform left-1/2 -translate-x-1/2 opacity-0 group-hover/tech-icon:opacity-100 transition-opacity duration-300 bg-zinc-900 rounded-md p-1 text-sm">
         {tech.title}
-      </HoverCardContent>
-    </HoverCard>
+      </p>
+    </div>
   );
 };
 

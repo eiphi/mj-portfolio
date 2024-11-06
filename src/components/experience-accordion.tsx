@@ -8,14 +8,15 @@ import { experienceDataArray } from '@/lib/constants';
 import { ChevronUp } from 'lucide-react';
 
 const ExperienceAccordion = () => {
-  console.log(experienceDataArray);
   return (
     <Accordion
       className="flex w-3/4 flex-col divide-y-2 divide-zinc-700"
       transition={{ duration: 0.2, ease: 'easeInOut' }}
+      expandedValue={experienceDataArray[0].id}
     >
       {experienceDataArray.map((job) => (
         <AccordionItem
+          key={job.id}
           value={job.id}
           className="py-3"
         >

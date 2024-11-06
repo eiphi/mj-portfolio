@@ -1,14 +1,12 @@
 import ProjectCard from '@/components/project-card';
-import AnimatedBackground from '@/components/motion/animated-background';
 import SectionHeading from '@/components/section-heading';
 import { allProjectsArray, workProjectsArray, personalProjectsArray } from '@/lib/constants';
 import { forwardRef, useState } from 'react';
-import { AnimatedGroup } from '@/components/motion/animated-group';
 
 const projectCategoriesArray = ['All', 'Commercial', 'Personal'];
 
 const WorkSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
-  const [projectCategories, setProjectCategories] = useState('All');
+  const [projectCategories, setProjectCategories] = useState(projectCategoriesArray[0]);
 
   const selectedProjects =
     projectCategories === 'All'
@@ -19,10 +17,10 @@ const WorkSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
 
   return (
     <section
-      id="work"
       ref={ref}
+      id="work"
     >
-      <div className="w-full flex flex-col gap-4 items-center lg:px-20 px-14 pt-12">
+      <div className="h-full w-full flex flex-col gap-4 items-center lg:px-20 px-14 pt-12">
         <SectionHeading>Work</SectionHeading>
 
         <div className="rounded-[8px] p-[2px] bg-zinc-700 flex">
@@ -43,8 +41,9 @@ const WorkSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
           {selectedProjects.map((project, index) => {
             return (
               <ProjectCard
-                key={project.id + index}
+                key={`${project.id}-${index}`}
                 project={project}
+                // TODO DATA AND FIX ERROR
               />
             );
           })}

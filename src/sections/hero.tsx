@@ -95,14 +95,6 @@ const HeroSection = forwardRef<HTMLDivElement, { isActiveSection: boolean }>(({i
                 </a>
               </p>
             </div>
-            {/* <div className="hidden lg:flex justify-end absolute -bottom-24 right-20 overflow-hidden w-[250px]">
-              <img
-                src="/src/assets/maciek.png"
-                alt="Maciek Jazdzewski"
-                width="100%"
-                height="auto"
-              />
-            </div> */}
           </div>
 
           <div className="lg:w-full lg:w-1/2 lg:h-full">
@@ -121,6 +113,8 @@ const HeroSection = forwardRef<HTMLDivElement, { isActiveSection: boolean }>(({i
                       Tradr
                     </h4>
                     <p className="text-sm">
+                      {/* TODO THIS IS A DUMMY TEXT */}
+                      {/* TODO SLIDER AND REAL DATA */}
                       Worked on a project lorem ipsum dolor sit amet. Worked on a project lorem
                       ipsum dolor sit amet. Worked on a project lorem ipsum dolor sit adsad sa
                       dsadmet. Worked on a project lorem ipsum dolor sit amet. Worked on a project
@@ -137,10 +131,12 @@ const HeroSection = forwardRef<HTMLDivElement, { isActiveSection: boolean }>(({i
                 <Button variant="secondary">
                   <Github />
                   Github
+                  {/* TODO LINK */}
                 </Button>
                 <Button variant="default">
                   <FileText />
                   See my resume
+                  {/* TODO LINK */}
                 </Button>
               </div>
             </div>
