@@ -1,7 +1,7 @@
 import ProjectCard from '@/components/project-card';
 import SectionHeading from '@/components/section-heading';
 import { allProjectsArray, workProjectsArray, personalProjectsArray } from '@/lib/constants';
-import { forwardRef, useState } from 'react';
+import { forwardRef, useState, useEffect } from 'react';
 
 const projectCategoriesArray = ['All', 'Commercial', 'Personal'];
 
