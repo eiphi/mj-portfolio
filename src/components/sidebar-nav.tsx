@@ -1,7 +1,7 @@
 import { scrollToSection } from '@/lib/utils';
 import { Circle } from 'lucide-react';
 
-export const menuOptions = [
+const menuOptions = [
   {
     id: 'home',
     href: '/',

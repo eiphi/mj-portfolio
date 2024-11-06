@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { cn } from '@/lib/utils';
 
-import SidebarNav, { menuOptions } from '@/components/sidebar-nav';
+import SidebarNav from '@/components/sidebar-nav';
 import { InViewWrapper } from '@/components/in-view-wrapper';
 import Loader from '@/components/loader';
 
@@ -11,11 +11,10 @@ import SkillsSection from './sections/skills';
 import WorkSection from './sections/work';
 import ExperienceSection from './sections/experience';
 import ContactSection from './sections/contact';
-import { InView } from 'react-intersection-observer';
 
 const App = () => {
   const [isLoaderOpen, setIsLoaderOpen] = useState(true);
-  const [activeSection, setActiveSection] = useState(menuOptions[0].id);
+  const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
     setTimeout(() => {

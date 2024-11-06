@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation';
 import { ArrowDown, ArrowUp, ChevronDown, FileText, Github } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
-import { heroAnimationSequenceItems, Project, workProjectsArray } from '@/lib/constants';
+import { heroAnimationSequenceItems, workProjectsArray } from '@/lib/constants';
 import { cn, scrollToSection } from '@/lib/utils';
 
 const HeroSection = forwardRef<HTMLDivElement, { isActiveSection: boolean }>(

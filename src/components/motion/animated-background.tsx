@@ -1,6 +1,7 @@
-import { cn } from '@/lib/utils';
 import { AnimatePresence, Transition, motion } from 'framer-motion';
 import { Children, cloneElement, ReactElement, useEffect, useState, useId } from 'react';
+
+import { cn } from '@/lib/utils';
 
 type AnimatedBackgroundProps = {
   children: ReactElement<{ 'data-id': string }>[] | ReactElement<{ 'data-id': string }>;

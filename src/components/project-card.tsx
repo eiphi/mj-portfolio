@@ -1,6 +1,6 @@
 import { Card, CardDescription, CardHeader, CardTitle } from './ui/card';
 import TechIcon from './tech-icon';
-import { Project, Technology } from '@/lib/constants';
+import { Project } from '@/lib/constants';
 
 
 const ProjectCard = ({ project }: { project: Project }) => {
