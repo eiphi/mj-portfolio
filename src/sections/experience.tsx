@@ -1,11 +1,8 @@
 import { forwardRef } from 'react';
 
-import { ImageDialog } from '@/components/motion/image-dialog';
 import SectionHeading from '@/components/section-heading';
 import ExperienceAccordion from '@/components/experience-accordion';
-import cvThumbImage from '@/assets/cv1.png';
-import fullCvImage from '@/assets/cv-full.webp';
-import verticalCvImage from '@/assets/cv-vert.webp';
+import resumePDF from '@/assets/MACIEJ_JAZDZEWSKI_Resume.pdf';
 
 const ExperienceSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
   return (
@@ -19,19 +16,16 @@ const ExperienceSection = forwardRef<HTMLDivElement, {}>((props, ref) => {
           <div className="flex w-full h-auto lg:w-3/4 items-center justify-center">
             <ExperienceAccordion />
           </div>
-          <div className="hidden lg:flex w-full h-auto lg:w-1/4 items-center justify-center">
-            <ImageDialog
-              thumbUrl={cvThumbImage}
-              fullImgUrl={fullCvImage}
-              alt="CV"
-            />
-          </div>
-          <div className="flex lg:hidden w-full h-auto lg:w-1/4 items-center justify-center">
-            <ImageDialog
-              thumbUrl={cvThumbImage}
-              fullImgUrl={verticalCvImage}
-              alt="CV"
-            />
+          <div className="flex w-full h-auto lg:w-1/4 items-center justify-center cursor-pointer hover:scale-105 transition-all duration-200">
+            <a
+              href={resumePDF}
+              target="_blank"
+            >
+              <img
+                src="/src/assets/cv1.png"
+                alt="Resume"
+              />
+            </a>
           </div>
         </div>
       </div>
