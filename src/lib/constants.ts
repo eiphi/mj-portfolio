@@ -131,7 +131,7 @@ export const workProjectsArray = [
     id: 'ortto',
     title: 'Ortto',
     website: 'https://ortto.com',
-    desc: 'Part of the core frontend team building Ortto app. Led development of key features including reporting dashboards, widgets, playbooks, and push notifications among others.',
+    desc: 'Part of the core frontend team building the Ortto app— a robust and scalable marketing automation software. Led the development of key features, including reporting dashboards, widgets, playbooks, push notifications, and more.',
     technologies: [
       technologiesMap.React,
       technologiesMap.Redux,
@@ -149,7 +149,7 @@ export const workProjectsArray = [
     id: 'jjit',
     title: 'Just Join IT',
     website: 'https://justjoin.it',
-    desc: "As part of the founding development team of Poland's largest tech job board, I played a key role in building functionalities that drive company growth and led to multiple startup award nominations.",
+    desc: "Founding member of the development team for Poland's largest and fastest-growing tech job board. Built core functionalities that propelled the company's growth and contributed to multiple nominations for startup awards.",
     technologies: [
       technologiesMap.React,
       technologiesMap.AWS,
@@ -165,7 +165,7 @@ export const workProjectsArray = [
     id: 'tix',
     title: 'Tix.nl',
     website: 'https://www.tix.nl',
-    desc: 'First Software Tester in the biggest flight search engine company in the Netherlands. I was responsible for creating and executing test strategies and cases including test automation.',
+    desc: 'First Software Tester at the largest flight search engine company in the Netherlands, responsible for creating and executing comprehensive test strategies and cases, including test automation.',
     technologies: [
       technologiesMap.Storybook,
       technologiesMap.Browserstack,
@@ -182,7 +182,7 @@ export const workProjectsArray = [
     id: 'freelance',
     title: 'Freelance',
     website: 'https://eiphi.site',
-    desc: 'Worked independently as a freelance web developer, managing the entire project lifecycle from client acquisition through development and maintenance.',
+    desc: 'Operated as an independent freelance web developer, overseeing the full project lifecycle—from client acquisition to development and ongoing maintenance.',
     technologies: [
       technologiesMap.React,
       technologiesMap.Html,
@@ -202,7 +202,7 @@ export const personalProjectsArray = [
     id: 'games',
     title: 'Game deals',
     website: 'https://deals.eiphi.site',
-    desc: 'A personal project built with React, Redux Toolkit, ShadcnUI and Tailwind CSS. Search and compare the best gaming deals across various digital stores. Integrates with CheapShark and AnyGameDeals APIs.',
+    desc: 'A personal project developed with React, Redux Toolkit, ShadcnUI, and Tailwind CSS that allows users to search and compare top gaming deals across multiple digital stores. Integrated with CheapShark and AnyGameDeals APIs for real-time pricing.',
     technologies: [
       technologiesMap.React,
       technologiesMap.Redux,
@@ -217,7 +217,7 @@ export const personalProjectsArray = [
     id: 'bbgm',
     title: 'BBGM 6-man',
     website: 'https://bbgm6man.eiphi.site',
-    desc: 'A companion app for Basketball GM online game built with React and Redux. Features include importing Basketball GM savegames, comparing players, and storing data in local storage. Uses react-router, react-thunk, styled components, and Semantic UI.',
+    desc: 'A companion app for the Basketball GM online game, built with React and Redux. Key features include importing Basketball GM save games, player comparison and local data storage. Utilizes react-router, react-thunk, styled-components and Semantic UI for enhanced functionality and styling.',
     technologies: [
       technologiesMap.React,
       technologiesMap.Redux,
@@ -231,7 +231,7 @@ export const personalProjectsArray = [
     id: 'portfolio',
     title: 'MJ Portfolio',
     website: 'https://www.eiphi.site',
-    desc: 'This website built with React, Vite, Tailwind CSS and Framer Motion. Features animations and interactive elements and is fully responsive.',
+    desc: 'This website - built with React, Vite, Tailwind CSS and Framer Motion, featuring animations, interactive elements and full responsiveness across various devices.',
     technologies: [
       technologiesMap.React,
       technologiesMap.Css,
@@ -252,7 +252,7 @@ export const experienceDataArray = [
     dates: 'Oct 2019 - Jul 2023',
     url: 'https://ortto.com',
     description:
-      'Part of the core frontend team building Ortto app. Led development of key features including reporting dashboards, widgets, playbooks, and push notifications. \n\nWorked with React & Redux, Google Charts, and Pure JS among others. Mentored team members and contributed to feature planning.',
+      'Core member of the frontend team building the Ortto app — a robust and scalable marketing automation software, where I led the development of major features such as reporting dashboards, widgets, playbooks and push notifications.\n\nExtensively used React & Redux and Pure JS among others. Mentored team members and actively contributed to feature planning and strategy.',
   },
   {
     id: 'justjoinit',
@@ -261,7 +261,7 @@ export const experienceDataArray = [
     dates: 'Jan 2018 - Oct 2019',
     url: 'https://justjoin.it',
     description:
-      "As part of the founding development team of Poland's largest tech job board, I played a key role in building functionalities that drive company growth and led to multiple startup award nominations.\n\nResponsible for the transition from AngularJS to React while developing new features, designing layouts, and creating marketing landing pages. Took on leadership responsibilities including onboarding new developers and providing technical support to team members.",
+      "As a founding member of the development team for Poland's largest tech job board, I played a key role in building growth-driving functionalities that contributed to multiple startup award nominations.\n\nLed the transition from AngularJS to React, while developing new features, designing layouts and creating marketing landing pages. Took on leadership responsibilities by onboarding new developers and providing ongoing technical support to the team.",
   },
   {
     id: 'freelance',
@@ -270,7 +270,7 @@ export const experienceDataArray = [
     dates: 'Jan 2015 - Jan 2018',
     url: 'https://eiphi.site',
     description:
-      'Worked independently as a freelance web developer, managing the entire project lifecycle from client acquisition through development and maintenance.\n\nCollaborated with individual and corporate clients to build and maintain responsive websites, transforming designs into user-friendly applications using technologies like HTML, CSS, JavaScript, jQuery, WordPress, PrestaShop, and Joomla.',
+      'Worked independently as a freelance web developer, managing the entire project lifecycle from client acquisition through development and maintenance.\n\nCollaborated with individual and corporate clients to build and maintain responsive websites, transforming designs into user-friendly applications using technologies such as HTML, CSS, JavaScript, jQuery, WordPress, PrestaShop and Joomla.',
   },
   {
     id: 'tix',
@@ -279,6 +279,6 @@ export const experienceDataArray = [
     dates: 'Jul 2013 - Dec 2014',
     url: 'https://tix.nl',
     description:
-      'First Software Tester at the largest flight search engine company in the Netherlands, responsible for creating and executing test strategies including test automation.\n\nWorked closely with development team to maintain software quality while building automated tests using Ruby, Selenium and other tools.',
+      'As the first Software Tester at the largest flight search engine company in the Netherlands, I led the creation and execution of comprehensive test strategies, including test automation frameworks.\n\nCollaborated closely with the development team to ensure high software quality standards while designing and implementing automated tests using Ruby, Selenium and driving continuous improvement in product reliability.',
   },
 ];
