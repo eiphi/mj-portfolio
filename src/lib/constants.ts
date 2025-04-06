@@ -246,6 +246,15 @@ export const allProjectsArray = [...workProjectsArray, ...personalProjectsArray]
 
 export const experienceDataArray = [
   {
+    id: 'freelance-2',
+    company: 'Freelance',
+    position: 'Fullstack Developer',
+    dates: 'Jun 2024 - Present',
+    url: 'https://eiphi.site',
+    description:
+      'Part time freelance work for Just Join IT/RocketJobs.\n- New features and performance improvements to the core Next.js app\n- Matchmaking application new features, improvements and bug fixing\n\nWorking on my personal projects and upskilling:\n- Youtube companion app for one of the biggest news channels on Polish youtube (Next.js, Drizzle ORM, Cloudflare D1 DB)\n- Social Workout tracker app (Node.js, MongoDB, React, OpenAI Api)',
+  },
+  {
     id: 'ortto',
     company: 'Ortto',
     position: 'Senior Frontend Developer',
